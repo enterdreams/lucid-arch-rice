@@ -1,0 +1,100 @@
+configuration {
+
+  modes: [ combi ];
+
+
+  combi-modes: [ window, drun, run ];
+}
+@theme "default"
+
+
+/* Insert theme modifications after this */
+
+message{
+  padding :0px;
+  border: 0;
+  border-color: transparent;
+}
+
+* {
+  font : "lato 18";
+}
+
+entry, element-text {
+  font-size: 20;
+  border:none;
+  font : "source sans pro";
+  vertical-align : 0.5;
+  padding : 20px;
+}
+
+element{
+  padding : 0px;
+  spacing : 0px;
+}
+
+window {
+  padding : 10;
+}
+
+window, overlay, mainbox{
+  border : none;
+  background-color:#EBE3D5;
+  border-color : transparent;
+  border : 0px;
+}
+
+prompt{
+  background-color : transparent;
+  vertical-align:0.5;
+}
+
+element-text normal, element normal, element-icon normal{
+    background-color : #EBE3D5;
+  text-color : #776B5D;
+  spacing : 0px;
+}
+
+listview{
+  background-color: #EBE3D5;
+  spacing : 0px;
+}
+
+
+element-text selected, element selected, element-icon selected{
+    background-color : #F3EEEA;
+  text-color : #B0A695;
+  spacing : 0px;
+}
+
+entry {
+
+    placeholder: "Search";
+    cursor: pointer;
+    padding : 10;
+}
+
+element {
+  orientation: horizontal;
+  children: [ element-icon, element-text ];
+
+  spacing: 5px;
+  margin : 0;
+  border: 0;
+}
+
+listview {
+  lines : 10;
+    padding : 0;
+    margin: 0;
+    padding : 0;
+    border : 0;
+}
+
+element-icon{
+  size : 2.5em;
+}
+
+mainbox {
+    border : none;
+}
